@@ -3,25 +3,16 @@
  */
 
 import React from "react";
+// Package for Google Maps
 import {
   GoogleMap,
   useLoadScript,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import usePlacesAutocomplete, {
-  getGeocode,
-  getLatLng,
-} from "use-places-autocomplete";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxPopover,
-  ComboboxList,
-  ComboboxOption,
-} from "@reach/combobox";
 import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyles";
+import Search from "./Search";
 import "./index.css";
 require("dotenv").config();
 
@@ -78,6 +69,9 @@ function App() {
           ⛳
         </span>
       </h1>
+
+      <Search />
+
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={8}
@@ -118,6 +112,10 @@ function App() {
       </GoogleMap>
     </div>
   );
+}
+
+function SearchBox() {
+    return Search;
 }
 
 export default App;
