@@ -1,0 +1,30 @@
+{
+  "cities": {
+    "Chicago": {
+      "lat": 41.8781,
+      "lng": -87.6298
+    }
+  },
+  "courses": [
+    {
+      "id": 1,
+      "name": "Chicago Golf Club",
+      "par": "",
+      "yardage": "",
+      "architect": "",
+      "town": "",
+      "lat": 41.8494,
+      "lng": -88.1157
+    },
+    {
+      "id": 2,
+      "name": "Cantigny Golf Club",
+      "par": "",
+      "yardage": "",
+      "architect": "",
+      "town": "",
+      "lat": 41.8472,
+      "lng": -88.1553
+    }
+  ]
+}
