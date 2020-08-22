@@ -4,15 +4,17 @@ import {
   ComboboxInput,
   ComboboxPopover,
   ComboboxOption,
+  ComboboxList,
 } from "@reach/combobox";
 import usePlacesAutocomplete, {
-    getGeocode,
-    getLatLng,
-  } from "use-places-autocomplete";
+  getGeocode,
+  getLatLng,
+} from "use-places-autocomplete";
 import "@reach/combobox/styles.css";
 import "./index.css";
 
-export default function Search() {
+
+export default function Search({ panTo }) {
   const {
     ready,
     value,
@@ -39,6 +41,7 @@ export default function Search() {
     try {
       const results = await getGeocode({ address });
       const { lat, lng } = await getLatLng(results[0]);
+      panTo({ lat, lng });
     } catch (error) {
       console.log(error);
     }
@@ -46,9 +49,7 @@ export default function Search() {
 
   return (
     <div className="search">
-      <Combobox
-        onSelect={handleSelect}
-      >
+      <Combobox onSelect={handleSelect}>
         <ComboboxInput
           value={value}
           onChange={(e) => {
@@ -58,10 +59,12 @@ export default function Search() {
           placeholder="Enter an address"
         />
         <ComboboxPopover>
-          {status === "OK" &&
-            data.map(({ id, description }) => (
-              <ComboboxOption key={id} value={description} />
-            ))}
+          <ComboboxList>
+            {status === "OK" &&
+              data.map(({ id, description }) => (
+                <ComboboxOption key={id} value={description} />
+              ))}
+          </ComboboxList>
         </ComboboxPopover>
       </Combobox>
     </div>

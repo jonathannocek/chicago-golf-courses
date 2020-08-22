@@ -13,6 +13,7 @@ import {
 import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyles";
 import Search from "./Search";
+import Locate from "./Locate";
 import "./index.css";
 require("dotenv").config();
 
@@ -58,6 +59,11 @@ function App() {
     mapRef.current = map;
   }, []);
 
+  const panTo = React.useCallback(({lat, lng}) => {
+    mapRef.current.panTo({lat, lng});
+    mapRef.current.setZoom(14)
+}, []);
+
   if (loadError) return "Error Loading Maps";
   if (!isLoaded) return "Loading Maps";
 
@@ -70,7 +76,8 @@ function App() {
         </span>
       </h1>
 
-      <Search />
+      <SearchBox panTo={panTo}/>
+      <LocateButton panTo={panTo}/>
 
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
@@ -114,8 +121,12 @@ function App() {
   );
 }
 
-function SearchBox() {
-    return Search;
+function SearchBox({panTo}) {
+    return Search({panTo});
+}
+
+function LocateButton({panTo}) {
+  return Locate({panTo});
 }
 
 export default App;
