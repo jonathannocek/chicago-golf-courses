@@ -20,4 +20,4 @@ I used [this tutorial](https://www.youtube.com/watch?v=WZcxJGmLbSo) to help me s
 
 
 ## Author
-Jonathan Nocek - [jnocek@iwu.edu]
+Jonathan Nocek - *jnocek@iwu.edu*
