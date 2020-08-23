@@ -8,23 +8,113 @@
   "courses": [
     {
       "id": 1,
-      "name": "Chicago Golf Club",
-      "par": "",
-      "yardage": "",
-      "architect": "",
-      "town": "",
+      "name": "Chicago",
+      "architect": "C.B. Macdonald, Seth Raynor",
       "lat": 41.8494,
-      "lng": -88.1157
+      "lng": -88.1157,
+      "privacy": "private",
+      "notes": {
+
+      }
     },
     {
       "id": 2,
-      "name": "Cantigny Golf Club",
-      "par": "",
-      "yardage": "",
-      "architect": "",
-      "town": "",
-      "lat": 41.8472,
-      "lng": -88.1553
+      "name": "Shoreacres",
+      "architect": "Seth Raynor",
+      "lat": 42.297852,
+      "lng": -87.837612,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 3,
+      "name": "Skokie",
+      "architect": "Donald Ross",
+      "lat": 42.129032,
+      "lng": -87.761261,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 4,
+      "name": "Butler National",
+      "architect": "George Fazio, Tom Fazio",
+      "lat": 41.8412 ,
+      "lng": -87.9434,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 5,
+      "name": "Olympia Fields (North)",
+      "architect": "Willie Park Jr",
+      "lat": 41.5132,
+      "lng": -87.6926,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 6,
+      "name": "Old Elm",
+      "architect": "Donald Ross, Harry Colt",
+      "lat": 42.2178019,
+      "lng": -87.8303459,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 7,
+      "name": "Beverly CC",
+      "architect": "Donald Ross",
+      "lat": 41.7302,
+      "lng": -87.6879,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 8,
+      "name": "Black Sheep",
+      "architect": "Dave Esler",
+      "lat": 41.761417,
+      "lng": -88.443687,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 9,
+      "name": "Medinah (No. 3)",
+      "architect": "Willie Park Jr",
+      "lat": 41.9596,
+      "lng": -88.0423,
+      "privacy": "private",
+      "notes": {
+        
+      }
+    },
+    {
+      "id": 10,
+      "name": "Flossmoor",
+      "architect": "Herbert Tweedie",
+      "lat": 41.561638,
+      "lng": -87.673637,
+      "privacy": "private",
+      "notes": {
+        
+      }
     }
   ]
 }

@@ -1,9 +1,10 @@
 # Find Good Golf
 
-A ReactJS app integrated with the Google Maps API to find good golf courses near a specified location.
+A ReactJS app integrated with the Google Maps API to display the top 10 courses in the Chicagoland area
 
+### Map
 
-## Technical Notes
+![Example Map](images/example_map.png)
 
 ### Google Maps API
 
@@ -12,6 +13,11 @@ Google Maps APIs to be enabled:
 - Geocoding API
 - Maps Javascript API
 - Places API
+
+### Tutorial
+
+I used [this tutorial](https://www.youtube.com/watch?v=WZcxJGmLbSo) to help me start my project.
+
 
 ## Author
 Jonathan Nocek - [jnocek@iwu.edu]
